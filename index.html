@@ -1,0 +1,45 @@
+<p>
+<head>
+<style>
+  h1 {font-size: 48px;}
+  h1 {text-align: center;}
+  h1 {font-family: "SansSerif";}
+  h1 {color: blue}
+  h2 {font-family: "SansSerif"; font-size: 32px; font-weight: bold;}
+  label {font-size: 32px; font-weight: 390;}
+  label {font-family: "SansSerif";}
+  input {font-size: 32px;}
+  input {font-family: "SansSerif";}
+  button {text-align: center;} 
+  button {font-size: 27px;}
+  button {font-family: "SansSerif";}
+  .backgroundImage {
+   background-image: url("background.jpg");
+   height: 90%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   }
+</style>
+</head>
+</p>  
+
+<div class="AdultAutism"/>
+
+<h1>ADULT AUTISM</h1>
+  
+<center><label> Explain Audit Autism and what's the project here </label></center><br><br><br>
+
+<label> Add the project, what algorithm you had used. What's the accuracy and do the prediction using given input. Just enter the following:</label><br><br><br>
+  
+<form action="{{ url_for("adult_autism")}}" method="POST">
+  
+<label for="a_Score">A Score :</label>
+<input id="a_Score" name="A_Score" type="text" placeholder="add A_Score" /><br><br><br>
+  
+<label for="age">Age :</label>
+<input id="age" name="Age" type="text" placeholder="add age" /><br><br><br><br>
+            
+<center><button type="submit">Predict</button></form></center>
+
+<center><h2>{{output}}</h2></div></center>
