@@ -1,0 +1,7 @@
+Flask==1.1.2
+joblib==0.17.0
+numpy
+pandas
+gunicorn==20.1.0
+sklearn
+keras
